@@ -1,5 +1,3 @@
-import $ from '/js/libs/jquery/dist/jquery.js'
-
 // document.getElementById("sliderRange").innerHTML = `
 // <div class="slidercontainer"></div>
 // `;
