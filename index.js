@@ -1,4 +1,3 @@
-import "./styles.css";
 import $ from '/js/libs/jquery/dist/jquery.js'
 
 // document.getElementById("sliderRange").innerHTML = `
