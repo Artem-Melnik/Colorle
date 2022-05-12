@@ -1,5 +1,5 @@
 import "./styles.css";
-import $ from "jQuery";
+import $ from '/js/libs/jquery/dist/jquery.js'
 
 // document.getElementById("sliderRange").innerHTML = `
 // <div class="slidercontainer"></div>
