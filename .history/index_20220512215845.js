@@ -42,9 +42,6 @@ function onSubmit() {
   document.getElementById("guessColor").textContent =
     "rgb(" + red + ", " + green + ", " + blue + ")";
 
-// TODO: Fix bug where anything lower than the correctColor is rated,
-// but anything higher is rated as "D" for some reason
-
   // Check if guess is correct
 if (red === correctRed) {
   document.getElementById('ratingRed').innerText = "SS";

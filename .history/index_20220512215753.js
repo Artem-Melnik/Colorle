@@ -42,19 +42,16 @@ function onSubmit() {
   document.getElementById("guessColor").textContent =
     "rgb(" + red + ", " + green + ", " + blue + ")";
 
-// TODO: Fix bug where anything lower than the correctColor is rated,
-// but anything higher is rated as "D" for some reason
-
   // Check if guess is correct
 if (red === correctRed) {
   document.getElementById('ratingRed').innerText = "SS";
-} else if ((red > correctRed - 6) && (red < correctRed + 6)) {
+} else if (red > correctRed - 6 && red < correctRed + 6) {
   document.getElementById('ratingRed').innerText = "S";
-} else if ((red > correctRed - 12) && (red < correctRed + 12)) {
+} else if (red > correctRed - 12 && red < correctRed + 12) {
   document.getElementById('ratingRed').innerText = "A";
-} else if ((red > correctRed - 24) && (red < correctRed + 24)) {
+} else if (red > correctRed - 24 && red < correctRed + 24) {
   document.getElementById('ratingRed').innerText = "B";
-} else if ((red > correctRed - 48) && (red < correctRed + 48)) {
+} else if (red > correctRed - 48 && red < correctRed + 48) {
   document.getElementById('ratingRed').innerText = "C";
 } else {
   document.getElementById('ratingRed').innerText = "D";

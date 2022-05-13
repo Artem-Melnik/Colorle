@@ -42,52 +42,48 @@ function onSubmit() {
   document.getElementById("guessColor").textContent =
     "rgb(" + red + ", " + green + ", " + blue + ")";
 
-// TODO: Fix bug where anything lower than the correctColor is rated,
-// but anything higher is rated as "D" for some reason
-
   // Check if guess is correct
 if (red === correctRed) {
   document.getElementById('ratingRed').innerText = "SS";
-} else if ((red > correctRed - 6) && (red < correctRed + 6)) {
+} else if (red > correctRed - 6 && red < correctRed + 6) {
   document.getElementById('ratingRed').innerText = "S";
-} else if ((red > correctRed - 12) && (red < correctRed + 12)) {
+} else if (red > correctRed - 12 && red < correctRed + 12) {
   document.getElementById('ratingRed').innerText = "A";
-} else if ((red > correctRed - 24) && (red < correctRed + 24)) {
+} else if (red > correctRed - 24 && red < correctRed + 24) {
   document.getElementById('ratingRed').innerText = "B";
-} else if ((red > correctRed - 48) && (red < correctRed + 48)) {
+} else if (red > correctRed - 48 && red < correctRed + 48) {
   document.getElementById('ratingRed').innerText = "C";
 } else {
   document.getElementById('ratingRed').innerText = "D";
 } 
-
   // Does same thing as red check but for green
 if (green === correctGreen) {
-  document.getElementById('ratingGreen').innerText = "SS";
-} else if ((green > correctGreen - 6) && (green < correctGreen + 6)) {
-  document.getElementById('ratingGreen').innerText = "S";
-} else if ((green > correctGreen - 12) && (green < correctGreen + 12)) {
-  document.getElementById('ratingGreen').innerText = "A";
-} else if ((green > correctGreen - 24) && (green < correctGreen + 24)) {
-  document.getElementById('ratingGreen').innerText = "B";
-} else if ((green > correctGreen - 48) && (green < correctGreen + 48)) {
-  document.getElementById('ratingGreen').innerText = "C";
+  alert("Green: SS");
+} else if (green > correctGreen - 6 && green < correctGreen + 6) {
+  alert("Green: S");
+} else if (green > correctGreen - 12 && green < correctGreen + 12) {
+  alert("Green: A");
+} else if (green > correctGreen - 24 && green < correctGreen + 24) {
+  alert("Green: B");
+} else if (green > correctGreen - 48 && green < correctGreen + 48) {
+  alert("Green: C");
 } else {
-  document.getElementById('ratingGreen').innerText = "D";
+  alert("Green: D");
 } 
 
   // Does same thing as red check but for blue
 if (blue === correctBlue) {
-  document.getElementById('ratingBlue').innerText = "SS";
-} else if ((blue > correctBlue - 6) && (blue < correctBlue + 6)) {
-  document.getElementById('ratingBlue').innerText = "S";
-} else if ((blue > correctBlue - 12) && (blue < correctBlue + 12)) {
-  document.getElementById('ratingBlue').innerText = "A";
-} else if ((blue > correctBlue - 24) && (blue < correctBlue + 24)) {
-  document.getElementById('ratingBlue').innerText = "B";
-} else if ((blue > correctBlue - 48) && (blue < correctBlue + 48)) {
-  document.getElementById('ratingBlue').innerText = "C";
+  alert("Blue: SS");
+} else if (blue > correctBlue - 6 && blue < correctBlue + 6) {
+  alert("Blue: S");
+} else if (blue > correctBlue - 12 && blue < correctBlue + 12) {
+  alert("Blue: A");
+} else if (blue > correctBlue - 24 && blue < correctBlue + 24) {
+  alert("Blue: B");
+} else if (blue > correctBlue - 48 && blue < correctBlue + 48) {
+  alert("Blue: C");
 } else {
-  document.getElementById('ratingBlue').innerText = "D";
+  alert("Blue: D");
 }
 
   // if ("rgb(" + red + "," + green + "," + blue + ")" === "rgb(141,201,201)") {

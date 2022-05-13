@@ -168,12 +168,8 @@ body {
 
 #currentRed,
 #currentGreen,
-#currentBlue,
-#ratingRed,
-#ratingGreen,
-#ratingBlue {
+#currentBlue {
   display: inline-block;
-  position: relative;
 }
 
 #previewRed,

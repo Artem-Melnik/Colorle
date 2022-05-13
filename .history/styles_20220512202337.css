@@ -173,7 +173,6 @@ body {
 #ratingGreen,
 #ratingBlue {
   display: inline-block;
-  position: relative;
 }
 
 #previewRed,
