@@ -8,7 +8,7 @@
 // sliderRange.innerHTML = slider.value;
 let correctRed = 141;
 let correctGreen = 201;
-let correctBlue = 201;
+let correctBlue = 255;
 
 let red;
 let green;

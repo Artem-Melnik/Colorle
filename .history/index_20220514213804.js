@@ -56,7 +56,7 @@ if (red == correctRed) {
   document.getElementById('ratingRed').innerText = "C";
 } else {
   document.getElementById('ratingRed').innerText = "D";
-} 
+}
 
   // Does same thing as red check but for green
 if (green == correctGreen) {
@@ -103,7 +103,6 @@ function themeSwitch() {
 }
 
 document.getElementById("correctColor").style.backgroundColor = correctRgb;
-document.getElementById("logo").style.fill = correctRgb;
 document.getElementById("submitButton").style.backgroundColor = correctRgb;
 document.getElementById("submitButton").style.borderColor =
   "rgb(" +

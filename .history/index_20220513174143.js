@@ -6,9 +6,9 @@
 // // Change "demo" to something else?
 // var sliderRange = document.getElementById("demo");
 // sliderRange.innerHTML = slider.value;
-let correctRed = 141;
-let correctGreen = 201;
-let correctBlue = 201;
+let correctRed = "141";
+let correctGreen = "201";
+let correctBlue = "201";
 
 let red;
 let green;
@@ -41,10 +41,12 @@ function onSubmit() {
     "rgb(" + red + ", " + green + ", " + blue + ")";
   document.getElementById("guessColor").textContent =
     "rgb(" + red + ", " + green + ", " + blue + ")";
- 
-  // TODO: Optimize code for red, green, and blue checks
-  // Check if red guess is correct
-if (red == correctRed) {
+
+// TODO: Fix bug where anything lower than the correctColor is rated,
+// but anything higher is rated as "D" for some reason
+
+  // Check if guess is correct
+if (red === correctRed) {
   document.getElementById('ratingRed').innerText = "SS";
 } else if ((red > correctRed - 6) && (red < correctRed + 6)) {
   document.getElementById('ratingRed').innerText = "S";
@@ -59,7 +61,7 @@ if (red == correctRed) {
 } 
 
   // Does same thing as red check but for green
-if (green == correctGreen) {
+if (green === correctGreen) {
   document.getElementById('ratingGreen').innerText = "SS";
 } else if ((green > correctGreen - 6) && (green < correctGreen + 6)) {
   document.getElementById('ratingGreen').innerText = "S";
@@ -74,7 +76,7 @@ if (green == correctGreen) {
 } 
 
   // Does same thing as red check but for blue
-if (blue == correctBlue) {
+if (blue === correctBlue) {
   document.getElementById('ratingBlue').innerText = "SS";
 } else if ((blue > correctBlue - 6) && (blue < correctBlue + 6)) {
   document.getElementById('ratingBlue').innerText = "S";
@@ -103,7 +105,6 @@ function themeSwitch() {
 }
 
 document.getElementById("correctColor").style.backgroundColor = correctRgb;
-document.getElementById("logo").style.fill = correctRgb;
 document.getElementById("submitButton").style.backgroundColor = correctRgb;
 document.getElementById("submitButton").style.borderColor =
   "rgb(" +

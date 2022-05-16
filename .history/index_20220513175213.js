@@ -41,9 +41,11 @@ function onSubmit() {
     "rgb(" + red + ", " + green + ", " + blue + ")";
   document.getElementById("guessColor").textContent =
     "rgb(" + red + ", " + green + ", " + blue + ")";
- 
-  // TODO: Optimize code for red, green, and blue checks
-  // Check if red guess is correct
+
+// TODO: Fix bug where anything lower than the correctColor is rated,
+// but anything higher is rated as "D" for some reason
+
+  // Check if guess is correct
 if (red == correctRed) {
   document.getElementById('ratingRed').innerText = "SS";
 } else if ((red > correctRed - 6) && (red < correctRed + 6)) {
@@ -103,7 +105,6 @@ function themeSwitch() {
 }
 
 document.getElementById("correctColor").style.backgroundColor = correctRgb;
-document.getElementById("logo").style.fill = correctRgb;
 document.getElementById("submitButton").style.backgroundColor = correctRgb;
 document.getElementById("submitButton").style.borderColor =
   "rgb(" +

@@ -103,7 +103,7 @@ function themeSwitch() {
 }
 
 document.getElementById("correctColor").style.backgroundColor = correctRgb;
-document.getElementById("logo").style.fill = correctRgb;
+document.getElementById("logo").style.backgroundColor = correctRgb;
 document.getElementById("submitButton").style.backgroundColor = correctRgb;
 document.getElementById("submitButton").style.borderColor =
   "rgb(" +

@@ -27,7 +27,7 @@ body {
   margin-bottom: 7%;
   margin-top: 2%;
   width: 165px;
-  height: 42px;
+  height: 48px;
   align-items: center;
 }
 
@@ -35,9 +35,8 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: -3px;
-  margin-right: 3px;
+  margin-top: 5px;
+  margin-right: 5px;
   width: 32px;
   height: 32px;
 }
