@@ -2,7 +2,7 @@
   "name": "vanilla",
   "version": "1.0.0",
   "type": "module"
-  "description": "JavaScript example starter project",
+  "description": "Wordle but for designers",
   "main": "index.html",
   "license": "UNLICENSED",
   "scripts": {
