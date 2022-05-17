@@ -1,3 +1,6 @@
+/* TODO: Replace title svg with text and import font from Google Fonts
+More info here: https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file */
+
 body {
   font-family: sans-serif;
   margin: 0;
