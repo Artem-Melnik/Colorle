@@ -6,9 +6,9 @@
 // // Change "demo" to something else?
 // var sliderRange = document.getElementById("demo");
 // sliderRange.innerHTML = slider.value;
-let correctRed = Math.floor(Math.random() * 255);
-let correctGreen = Math.floor(Math.random() * 255);
-let correctBlue = Math.floor(Math.random() * 255);
+let correctRed = Math.random() * 255;
+let correctGreen = Math.random() * 255;
+let correctBlue = Math.random() * 255;
 
 let red;
 let green;
